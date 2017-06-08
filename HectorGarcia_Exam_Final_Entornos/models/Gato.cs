@@ -13,6 +13,8 @@ namespace HectorGarcia_Exam_Final_Entornos.models
 
         public Gato(String nombre, String fechaNac, double peso, string raza, string micro) : base(nombre, fechaNac, peso)
         {
+            Raza = raza;
+            Micro = micro;
         }
 
         public string Raza

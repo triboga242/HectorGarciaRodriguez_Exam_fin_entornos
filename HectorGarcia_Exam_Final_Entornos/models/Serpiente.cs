@@ -14,7 +14,7 @@ namespace HectorGarcia_Exam_Final_Entornos.models
         public Serpiente(String nombre, String fechaNac, double peso, bool veneno, string especie) : base(nombre, fechaNac, peso)
         {
             _venenosa = veneno;
-
+            Especie = especie;
         }
 
         public string Envenena

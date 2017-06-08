@@ -33,8 +33,7 @@ namespace HectorGarcia_Exam_Final_Entornos.models
                 Console.WriteLine("*1.Añadir animal           *");
                 Console.WriteLine("*2.Modificar comentarios   *");
                 Console.WriteLine("*3.Mostrar ficha           *");
-                Console.WriteLine("*4.Mostrar todas las fichas*");
-                Console.WriteLine("*5.Salir de la clí­nica     *");
+                Console.WriteLine("*4.Salir de la cli­nica     *");
                 Console.WriteLine("*******MENU PRINCIPAL*******");
 
                 opcion = LeerEntero();
@@ -55,9 +54,6 @@ namespace HectorGarcia_Exam_Final_Entornos.models
                         break;
 
                     case 4:
-                        Console.WriteLine(listaAnimales.ToString());
-                        break;
-                    case 5:
                         Console.WriteLine("Gracias por su visita, espero no tenga una tarde de perros.");
                         break;
 
@@ -304,7 +300,13 @@ namespace HectorGarcia_Exam_Final_Entornos.models
 
         public override string ToString()
         {
-            return "ClinicaVeterinaria [nombre=" + _nombre + "\n listaAnimales=" + listaAnimales.ToString()
+            string tiendaAnimales2 = "";
+            foreach(Animal ani in listaAnimales)
+            {
+                tiendaAnimales2 += ani.ToString() + "\n";
+            }
+
+            return "ClinicaVeterinaria [nombre=" + _nombre + "\n listaAnimales=" + tiendaAnimales2
                 + "]";
         }
 

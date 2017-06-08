@@ -14,7 +14,7 @@ namespace HectorGarcia_Exam_Final_Entornos.models
         public Pajaro(String nombre, String fechaNac, double peso, bool canta, string especie) : base(nombre, fechaNac, peso)
         {
             _cantor = canta;
-
+            Especie = especie;
         }
 
         public string Cantor
