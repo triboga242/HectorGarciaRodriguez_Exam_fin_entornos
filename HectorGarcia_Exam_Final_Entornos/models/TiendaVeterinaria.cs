@@ -61,7 +61,7 @@ namespace HectorGarcia_Exam_Final_Entornos.models
                         Console.WriteLine("[ERROR] Opcion no contemplada");
                         break;
                 }
-            } while (opcion != 5);
+            } while (opcion != 4);
         }
 
         /**
